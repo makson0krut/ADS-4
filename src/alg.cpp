@@ -64,5 +64,5 @@ int countPairs3(int* arr, int len, int value) {
         int second = value - arr[i];
         flag += binsearch(&arr[i + 1], len - i - 1, second);
     }
-    return count;
+    return flag;
 }
