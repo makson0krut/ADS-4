@@ -1,5 +1,4 @@
 // Copyright 2021 NNTU-CS
-
 int countPairs1(int* arr, int size, int value) {
     int flag = 0;
     for (int i = 0; i < size - 1; i++)
@@ -47,8 +46,7 @@ int cbinsearch(int* arr, int size, int value) {
         }
         if (arr[middle] < value) {
             left = middle + 1;
-        }
-        else {
+        } else {
             right = middle - 1;
         }
     }
