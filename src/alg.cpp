@@ -1,5 +1,8 @@
 // Copyright 2021 NNTU-CS
-int countPairs1(int *arr, int len, int value) {
+using namespace std;
+
+int countPairs1(int *arr, int len, int value)
+{
     int temp = 0, count = 0;
     for (int i = 0; i < len; ++i) {
         for (int j = 0; j < len - 1 - i; ++j) {
@@ -19,7 +22,9 @@ int countPairs1(int *arr, int len, int value) {
     }
     return count;
 }
-int countPairs2(int *arr, int len, int value) {
+
+int countPairs2(int *arr, int len, int value)
+{
     int temp = 0, count = 0;
     for (int i = 0; i < len; ++i) {
         for (int j = 0; j < len - 1 - i; ++j) {
@@ -39,7 +44,9 @@ int countPairs2(int *arr, int len, int value) {
     }
     return count;
 }
-int countPairs3(int *arr, int len, int value) {
+
+int countPairs3(int *arr, int len, int value)
+{
     int temp = 0;
     for (int i = 0; i < len; ++i) {
         for (int j = 0; j < len - 1 - i; ++j) {
